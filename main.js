@@ -13,8 +13,11 @@ if (options.send) {
     const fileToSend = options.file;
 
     const server = require('server/server.js');
+    server.start(fileToSend);
+
 } else if (options.receive) {
     const outputPath = options.output;
 
     const client = require('client/client.js');
+    client.start(outputPath);
 }
