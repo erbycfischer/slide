@@ -19,5 +19,5 @@ if (options.send) {
     const outputPath = options.output;
 
     const client = require('client/client.js');
-    client.start(outputPath);
+    //client.start(outputPath);
 }
