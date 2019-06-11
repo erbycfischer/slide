@@ -1,4 +1,4 @@
-let start = (filePath) => {
+let start = async (filePath) => {
     const express = require('express');
     const app = express();
 

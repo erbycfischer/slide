@@ -13,7 +13,7 @@ if (options.send) {
     const fileToSend = options.file;
 
     const server = require('server/server.js');
-    server.start(fileToSend);
+    await server.start(fileToSend);
 
 } else if (options.receive) {
     const outputPath = options.output;
