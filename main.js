@@ -4,7 +4,8 @@ const optionDefinitions = [
     { name: 'send', alias: 's', type: Boolean },
     { name: 'receive', alias: 'r', type: Boolean },
     { name: 'file', alias: 'f', type: String },
-    { name: 'output', alias: 'o', type: String }
+    { name: 'output', alias: 'o', type: String },
+    { name: 'address', alies: 'ip', type: String}
 ];
 
 const options = cli(optionDefinitions);
@@ -17,7 +18,8 @@ if (options.send) {
 
 } else if (options.receive) {
     const outputPath = options.output;
+    const ip = options.address;
 
     const client = require('client/client.js');
-    //client.start(outputPath);
+    await client.start(ip, outputPath);
 }
