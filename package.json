@@ -1,0 +1,16 @@
+{
+  "name": "slide",
+  "version": "0.0.1",
+  "description": "Command-line airdrop",
+  "main": "main.js",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "local-devices": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erby Fischer",
+  "license": "MIT"
+}
