@@ -9,7 +9,7 @@ const optionDefinitions = [
 
 const options = cli(optionDefinitions);
 
-if (options.name == 'send') {
+if (options.send) {
     const fileToSend = options.file;
 
     const server = require('server/server.js');
