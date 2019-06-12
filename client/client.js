@@ -5,3 +5,5 @@ let start = async (ip, port, outPath) => {
     let response = request("http://" + ip + ":" + port);
     response.pipe(fs.createWriteStream(outPath));
 }
+
+modules.exports = start;

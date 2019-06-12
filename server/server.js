@@ -8,3 +8,5 @@ let start = async (port, filePath) => {
 
     app.listen(port);
 };
+
+modules.exports = start;
