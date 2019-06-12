@@ -6,4 +6,4 @@ let start = async (ip, port, outPath) => {
     response.pipe(fs.createWriteStream(outPath));
 }
 
-modules.exports = start;
+module.exports = start;

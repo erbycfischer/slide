@@ -3,10 +3,10 @@ let start = async (port, filePath) => {
     const app = express();
 
     app.get('/', function(req, res) {
-        res.sendFile(this.filePath);
+        res.download(filePath);
     })
 
     app.listen(port);
 };
 
-modules.exports = start;
+module.exports = start;
