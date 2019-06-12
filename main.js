@@ -10,16 +10,18 @@ const optionDefinitions = [
 
 const options = cli(optionDefinitions);
 
+const PORT = 8080;
+
 if (options.send) {
     const fileToSend = options.file;
 
     const server = require('server/server.js');
-    await server.start(fileToSend);
+    await server.start(PORT, fileToSend);
 
 } else if (options.receive) {
     const outputPath = options.output;
     const ip = options.address;
 
     const client = require('client/client.js');
-    await client.start(ip, outputPath);
+    await client.start(ip, PORT, outputPath);
 }
