@@ -12,6 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "client": "node main.js --client ",
+    "server": "node main.js --server ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erby Fischer",
